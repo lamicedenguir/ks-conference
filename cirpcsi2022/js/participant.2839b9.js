@@ -1,0 +1,41 @@
+(function(d){var h=[];d.loadImages=function(a,e){"string"==typeof a&&(a=[a]);for(var f=a.length,g=0,b=0;b<f;b++){var c=document.createElement("img");c.onload=function(){g++;g==f&&d.isFunction(e)&&e()};c.src=a[b];h.push(c)}}})(window.jQuery);
+var wl;
+
+var lwi=-1;function thresholdPassed(){var w=$(window).width();var p=false;var cw=0;if(w>=480){cw++;}if(w>=768){cw++;}if(w>=960){cw++;}if(w>=1200){cw++;}if(w>=1920){cw++;}if(lwi!=cw){p=true;}lwi=cw;return p;}
+function em1(){var c="djsqdtj3133Alopxmfehfboetljmmt/fv";var addr="mailto:";for(var i=0;i<c.length;i++)addr+=String.fromCharCode(c.charCodeAt(i)-1);window.location.href=addr;}
+!function(){if("Promise"in window&&void 0!==window.performance){var e,t,r=document,n=function(){return r.createElement("link")},o=new Set,a=n(),i=a.relList&&a.relList.supports&&a.relList.supports("prefetch"),s=location.href.replace(/#[^#]+$/,"");o.add(s);var c=function(e){var t=location,r="http:",n="https:";if(e&&e.href&&e.origin==t.origin&&[r,n].includes(e.protocol)&&(e.protocol!=r||t.protocol!=n)){var o=e.pathname;if(!(e.hash&&o+e.search==t.pathname+t.search||"?preload=no"==e.search.substr(-11)||".html"!=o.substr(-5)&&".html"!=o.substr(-5)&&"/"!=o.substr(-1)))return!0}},u=function(e){var t=e.replace(/#[^#]+$/,"");if(!o.has(t)){if(i){var a=n();a.rel="prefetch",a.href=t,r.head.appendChild(a)}else{var s=new XMLHttpRequest;s.open("GET",t,s.withCredentials=!0),s.send()}o.add(t)}},p=function(e){return e.target.closest("a")},f=function(t){var r=t.relatedTarget;r&&p(t)==r.closest("a")||e&&(clearTimeout(e),e=void 0)},d={capture:!0,passive:!0};r.addEventListener("touchstart",function(e){t=performance.now();var r=p(e);c(r)&&u(r.href)},d),r.addEventListener("mouseover",function(r){if(!(performance.now()-t<1200)){var n=p(r);c(n)&&(n.addEventListener("mouseout",f,{passive:!0}),e=setTimeout(function(){u(n.href),e=void 0},80))}},d)}}();
+
+$(function(){
+r=function(){if(thresholdPassed()){dpi=window.devicePixelRatio;if($(window).width()>=1920){var e=document.querySelector('.un191');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-426.png':'images/transparentks-284.png'):'images/transparentks-142-1.png');
+var e=document.querySelector('.un192');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-747.png':'images/transparentks-498.png'):'images/transparentks-249.png');
+var e=document.querySelector('.un193');e.setAttribute('src',(dpi>1)?'images/csi-logo-480.jpg':'images/csi-logo-240.jpg');
+var e=document.querySelector('.un195');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-426.png':'images/transparentks-284.png'):'images/transparentks-142-1.png');
+var e=document.querySelector('.un196');e.setAttribute('src',(dpi>1)?'images/k-stransparent-848.png':'images/k-stransparent-424-1.png');}else if($(window).width()>=1200){var e=document.querySelector('.un191');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-267.png':'images/transparentks-178.png'):'images/transparentks-89.png');
+var e=document.querySelector('.un192');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-492.png':'images/transparentks-328.png'):'images/transparentks-164.png');
+var e=document.querySelector('.un193');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/csi-logo-345.jpg':'images/csi-logo-230.jpg'):'images/csi-logo-115.jpg');
+var e=document.querySelector('.un195');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-267-1.png':'images/transparentks-178-1.png'):'images/transparentks-89-1.png');
+var e=document.querySelector('.un196');e.setAttribute('src',(dpi>1)?'images/k-stransparent-530-1.png':'images/k-stransparent-265-1.png');}else if($(window).width()>=960){var e=document.querySelector('.un191');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-213.png':'images/transparentks-142.png'):'images/transparentks-71.png');
+var e=document.querySelector('.un192');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-423.png':'images/transparentks-282.png'):'images/transparentks-141.png');
+var e=document.querySelector('.un193');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/csi-logo-282.jpg':'images/csi-logo-188.jpg'):'images/csi-logo-94.jpg');
+var e=document.querySelector('.un195');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-213.png':'images/transparentks-142.png'):'images/transparentks-71.png');
+var e=document.querySelector('.un196');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/k-stransparent-636.png':'images/k-stransparent-424.png'):'images/k-stransparent-212.png');}else if($(window).width()>=768){var e=document.querySelector('.un191');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-171.png':'images/transparentks-114.png'):'images/transparentks-57.png');
+var e=document.querySelector('.un192');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-339.png':'images/transparentks-226.png'):'images/transparentks-113.png');
+var e=document.querySelector('.un193');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/csi-logo-225.jpg':'images/csi-logo-150-1.jpg'):'images/csi-logo-75-1.jpg');
+var e=document.querySelector('.un195');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-171-1.png':'images/transparentks-114-1.png'):'images/transparentks-57-1.png');
+var e=document.querySelector('.un196');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/k-stransparent-507.png':'images/k-stransparent-338.png'):'images/k-stransparent-169.png');}else if($(window).width()>=480){var e=document.querySelector('.un191');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-288.png':'images/transparentks-192.png'):'images/transparentks-96.png');
+var e=document.querySelector('.un192');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-687.png':'images/transparentks-458.png'):'images/transparentks-229.png');
+var e=document.querySelector('.un193');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/csi-logo-432.jpg':'images/csi-logo-288.jpg'):'images/csi-logo-144.jpg');
+var e=document.querySelector('.un195');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-459.png':'images/transparentks-306.png'):'images/transparentks-153.png');
+var e=document.querySelector('.un196');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/k-stransparent-495.png':'images/k-stransparent-330.png'):'images/k-stransparent-165.png');}else{var e=document.querySelector('.un191');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-192-1.png':'images/transparentks-128.png'):'images/transparentks-64.png');
+var e=document.querySelector('.un192');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-459-1.png':'images/transparentks-306-1.png'):'images/transparentks-153-1.png');
+var e=document.querySelector('.un193');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/csi-logo-288-1.jpg':'images/csi-logo-192.jpg'):'images/csi-logo-96.jpg');
+var e=document.querySelector('.un195');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/transparentks-306-2.png':'images/transparentks-204.png'):'images/transparentks-102.png');
+var e=document.querySelector('.un196');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/k-stransparent-330-2.png':'images/k-stransparent-220.png'):'images/k-stransparent-110.png');}}};
+if(!window.HTMLPictureElement){$(window).resize(r);r();}
+!function(){var e=document.querySelectorAll('a[href^="#"]');[].forEach.call(e,function(e){e.addEventListener("click",function(t){var o=0;if(e.hash.length>1){var l=parseFloat(getComputedStyle(document.body).getPropertyValue("zoom"));l||(l=1);var n=document.querySelectorAll('[name="'+e.hash.slice(1)+'"]')[0];o=(n.getBoundingClientRect().top+pageYOffset)*l}if("scrollBehavior"in document.documentElement.style)scroll({top:o,left:0,behavior:"smooth"});else if("requestAnimationFrame"in window){var r=pageYOffset,a=null;requestAnimationFrame(function e(t){a||(a=t);var l=t-a;scrollTo(0,r<o?(o-r)*l/400+r:r-(r-o)*l/400),l<400?requestAnimationFrame(e):scrollTo(0,o)})}else scrollTo(0,o);t.preventDefault()},!1)})}();
+$('form').h5Validate();initMenu($('#m7')[0]);
+initMenu($('#m8')[0]);
+initMenu($('#m9')[0]);
+var cs=new ConsentBanner('cookies_bar.html',undefined,0);cs.start(1);if(location.hash){var e=location.hash.replace("#",""),o=function(){var t=document.querySelectorAll('[name="'+e+'"]')[0];t&&t.scrollIntoView(),"complete"!=document.readyState&&setTimeout(o,100)};o()}
+
+});
